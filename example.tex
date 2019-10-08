@@ -1,0 +1,37 @@
+\documentclass{article}
+
+
+\usepackage[table]{xcolor}
+\usepackage{tabularx}    
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pagecolor,lipsum}
+\usepackage[a3paper,margin=1in,landscape]{geometry}
+\usepackage{blindtext}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\urlstyle{same}
+
+\begin{document}
+{   \renewcommand\tabularxcolumn[1]{m{#1}}
+    \setlength\arrayrulewidth{1pt}\arrayrulecolor{white}
+    \sffamily
+    \rowcolors{2}{blue!20}{cyan!10!gray!20}
+\begin{tabularx}{\linewidth}{l|C|C|C|C|C|C|C|C|C|C|C|l}
+\rowcolor{black!50!gray}
+\color{white} Versenyzés ID&\color{white} Játék&\color{white} Dátum&\color{white} Verseny&\color{white} URL&\color{white} Csapatnév&\color{white} Tag&\color{white} IGN&\color{white} Közvetítés/videó&\color{white} Eredmény&\color{white} Bejegyzést tette\\\hline
+1 & Paladins & 2019.09.29 & HCC-Hungarian Community Cup& \href{http://mpesz.hu/}{http://mpesz.hu/}&DEAC-Hackers Alpha& Regéczy Péter&Physicx1 &\href{https://www.twitch.tv/hungarianpaladinsleague}{https://www.twitch.tv/hungarianpaladinsleague} & &Regéczy Péter\\\hline
+1 & Paladins & 2019.09.29  & HCC-Hungarian Community Cup& \href{http://mpesz.hu/}{http://mpesz.hu/}&DEAC-Hackers Alpha& Kolozsvári Csongor& Csongli& \href{https://www.twitch.tv/hungarianpaladinsleague}{https://www.twitch.tv/hungarianpaladinsleague}& &Bátfai Norbert\\\hline
+1 & Paladins & 2019.09.29  & HCC-Hungarian Community Cup& \href{http://mpesz.hu/}{http://mpesz.hu/}& DEAC-Hackers Alpha& Irázi Beáta& Pjzs& \href{https://www.twitch.tv/hungarianpaladinsleague}{https://www.twitch.tv/hungarianpaladinsleague}& &Bátfai Norbert\\\hline
+1 & Paladins & 2019.09.29  & HCC-Hungarian Community Cup& \href{http://mpesz.hu/}{http://mpesz.hu/}& DEAC-Hackers Alpha& Bíró Norbert& EGO101& \href{https://www.twitch.tv/hungarianpaladinsleague}{https://www.twitch.tv/hungarianpaladinsleague}& &Bátfai Norbert\\\hline
+1 & Paladins & 2019.09.29  & HCC-Hungarian Community Cup& \href{http://mpesz.hu/}{http://mpesz.hu/}& DEAC-Hackers Alpha& Szalkai Bence& Szalka& \href{https://www.twitch.tv/hungarianpaladinsleague}{https://www.twitch.tv/hungarianpaladinsleague}& &Bátfai Norbert\\\hline
+  \end{tabularx}
+}
+\end{document}
